@@ -1,4 +1,5 @@
 const mysql = require("mysql");
+const promptUser = require("./lib/initialPrompt.js")
 const inquirer = require("inquirer");
 const consoleTable = require("console.table");
 

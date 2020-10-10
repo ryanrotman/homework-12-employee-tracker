@@ -15,5 +15,5 @@ connection.connect(err => {
     throw err;
   }
   console.log(`Connected as ID '${connection.threadId}'`);
-  // first function goes here
+  initialPrompt();
 });

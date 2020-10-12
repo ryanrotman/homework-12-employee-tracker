@@ -1,8 +1,6 @@
 // Load Requirements
 const mysql = require("mysql");
-const promptUser = require("./lib/initialPrompt.js")
-const inquirer = require("inquirer");
-const consoleTable = require("console.table");
+const userPrompt = require("./lib/initialPrompt");
 
 const connection = mysql.createConnection({
   host: "localhost",
@@ -17,5 +15,7 @@ connection.connect(err => {
     throw err;
   }
   console.log(`Connected as ID '${connection.threadId}'`);
-  initialPrompt();
+  userPrompt.begin();
 });
+
+module.exports = connection;

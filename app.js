@@ -18,4 +18,4 @@ connection.connect(err => {
   userPrompt.begin();
 });
 
-module.exports = connection;
+module.exports = {connection};

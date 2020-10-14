@@ -1,0 +1,28 @@
+{
+  "name": "homework-12-employee-tracker",
+  "version": "1.0.0",
+  "description": "This is a CLI application to track employees at a company. This application can be used to 1) add departments, roles, and employees 2) view departments, roles, and employees 3) update employee roles 4) update employee managers 5) view employees by manager 6) delete departments, roles, and employees 7) view the total budget by department.",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanrotman/homework-12-employee-tracker.git"
+  },
+  "author": "Ryan Rotman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanrotman/homework-12-employee-tracker/issues"
+  },
+  "homepage": "https://github.com/ryanrotman/homework-12-employee-tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^7.3.3",
+    "mysql": "^2.18.1",
+    "util": "^0.12.3"
+  }
+}

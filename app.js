@@ -1,6 +1,7 @@
 // Load Requirements
 const mysql = require("mysql");
 const userPrompt = require("./lib/initialPrompt");
+const util = require("util");
 
 const connection = mysql.createConnection({
   host: "localhost",
@@ -9,6 +10,8 @@ const connection = mysql.createConnection({
   password: "84Vq#sZ8>p",
   database: "emp_trackerDB"
 });
+
+connection.query = util.promisify(connection.query);
 
 connection.connect(err => {
   if (err) {

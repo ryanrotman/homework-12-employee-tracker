@@ -279,6 +279,7 @@ function getEmployeeNames() {
     });
 }
 
+// Get the current list of managers to pass into the addEmployee prompt for future development (TODO: below)
 function getManagers() {
     return new Promise((resolve, rejects) => {
         connection.query("SELECT CONCAT(e1.first_name, ' ', e1.last_name) AS name FROM employee e1 INNER JOIN employee e2 ON e2.manager_id = e1.id;", (err, res) => {
@@ -314,7 +315,7 @@ async function addEmployee() {
             message: "What is the employee's role?",
             choices: roleList
         },
-        // { FIXME: THIS FIELD IN THE TABLE CAN BE NULL, SO HOW DO I ALSO INCLUDE A NULL CHOICE?
+        // { TODO: THIS FIELD IN THE TABLE CAN BE NULL, SO HOW DO I ALSO INCLUDE A NULL CHOICE?
         //     name: "manager",
         //     type: "list",
         //     message: "Who is this employee's manager?",

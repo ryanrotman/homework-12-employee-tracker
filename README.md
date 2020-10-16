@@ -42,7 +42,10 @@ In addition to utilizing the console.table package to render tables from the dat
 To use this project you will need to clone this [repository](https://github.com/ryanrotman/homework-12-employee-tracker) and then open it in your text editor of choice. You will also need access to a CLI. This projected was created using VSCode and then run in the integrated terminal. Assuming that Node.js is already installed, you will need to run ```npm install``` and then you can run ```node server.js``` to launch the application and proceed through the prompts.
 
 ## Usage
-<!-- [Here is a video walkthrough of the project.]() -->
+Video walkthroughs of this application.
+
+- [Code Walkthrough](https://drive.google.com/file/d/1y7QG-6EzjoPhtp1xSrTII3P8gd3pn2oM/view)
+- [App Walkthrough](https://drive.google.com/file/d/1_JfE0fVA664_-z_XwWcP-JtkQrAZDZQN/view)
 
 ## Page Screenshots
 ![ReadMe_ScreenShot_EmpTracker](./Assets/Images/ReadMe_ScreenShot_EmpTracker.png)

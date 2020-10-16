@@ -131,7 +131,7 @@ function onInitialPromptAnswer({ action }) {
 
         case "Exit":
             default:
-                console.log("Thank you and goodbye.");
+                console.log("\nThank you and goodbye.\n");
                 connection.end();
     }
 }
@@ -151,7 +151,7 @@ function addDepartment() {
             if (err) {
                 throw err;
             }
-            console.log(`New department successfully added! -- ${deptName}`)
+            console.log(`\nNew department successfully added! -- ${deptName}\n`)
         })
         initialPrompt();
     })
@@ -166,7 +166,7 @@ function viewDept() {
         if (err) {
             throw err;
         }
-        const table = consoleTable.getTable("\nAll Departments:", res);
+        const table = consoleTable.getTable("\n\nAll Departments:", res);
         console.log(table)
     })
     initialPrompt();
@@ -224,7 +224,7 @@ async function addRole() {
             if (err) {
                 throw err;
             }
-            console.log(`New role successfully added! -- ${title} - ${salary} - ${department}`);
+            console.log(`\nNew role successfully added! -- ${title} - ${salary} - ${department}\n`);
         })
         initialPrompt();
     })
@@ -236,7 +236,7 @@ function viewRole() {
         if (err) {
             throw err;
         }
-        const table = consoleTable.getTable("\nAll Roles:", res);
+        const table = consoleTable.getTable("\n\nAll Roles:", res);
         console.log(table);
     })
     initialPrompt();
@@ -326,7 +326,7 @@ async function addEmployee() {
             if (err) {
                 throw err;
             }
-            console.log(`New employee successfully added! -- ${firstName} ${lastName}: ${role}`)
+            console.log(`\nNew employee successfully added! -- ${firstName} ${lastName}: ${role}\n`)
         })
         initialPrompt();
     })
@@ -338,7 +338,7 @@ function viewAllEmployees() {
         if (err) {
             throw err;
         }
-        const table = consoleTable.getTable("\nAll Employees:", res);
+        const table = consoleTable.getTable("\n\nAll Employees:", res);
         console.log(table);
     })
     initialPrompt();
@@ -366,7 +366,7 @@ async function updateEmployeeRole() {
             if (err) {
                 throw err;
             }
-            console.log(`${employee}'s role has been updated to ${newRole}.`)
+            console.log(`\n${employee}'s role has been updated to ${newRole}.\n`)
         })
         initialPrompt();
     })
